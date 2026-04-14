@@ -1,0 +1,7 @@
+torch
+numpy
+matplotlib
+scikit-learn
+wandb
+albumentations
+gdown
