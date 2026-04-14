@@ -1,6 +1,14 @@
-# DA6401 Assignment 2 — Visual Perception Pipeline
+# DA6401 Assignment 2 — Complete Visual Perception Pipeline
 
-A unified visual perception pipeline was developed on the Oxford-IIIT Pet Dataset to perform breed classification, object localization, and semantic segmentation. A custom VGG11 network with Batch Normalization and custom inverted Dropout was implemented from scratch. The learned encoder was reused for localization and U-Net style segmentation, then integrated into a single multi-task model
+This repository contains the implementation for DA6401 – Introduction to Deep Learning (Assignment 2). The objective of this assignment was to build a complete multi-stage visual perception system using the Oxford-IIIT Pet Dataset.
+
+The final pipeline performs three core computer vision tasks:
+
+Breed Classification (37 pet classes)
+Object Localization (bounding box prediction)
+Semantic Segmentation (pixel-wise trimap masks)
+
+A unified multi-task model was developed using a shared VGG11 encoder, with separate task-specific heads for classification, localization, and segmentation.
 
 ## WandB Report
 [Public WandB Report](https://api.wandb.ai/links/ae22b006-iitm-ac-in/4t4pfoaj
